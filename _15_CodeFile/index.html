@@ -3,10 +3,12 @@
 <head>
   <title>제대로 파는 자바스크립트</title>
 
-  <!-- 💡 defer로 변경해서 다시 실행해 볼 것 -->
-  <script defer src="./script.js"></script>
+  <!-- 💡 모듈로서 로드 -->
+  <script type="module" src="./dist/main.js"></script>
 </head>
 <body>
-  <span>변경 전...</span>
+  <script>
+    console.log('모듈은 defer 방식으로 로드됩니다.');
+  </script>
 </body>
 </html>
